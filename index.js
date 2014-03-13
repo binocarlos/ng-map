@@ -5,7 +5,7 @@ angular
 
   ])
 
-  .directive('map', function($http, $window, $q){
+  .directive('mapcanvas', function($http, $window, $q){
     
     
 
@@ -33,7 +33,9 @@ angular
       scope:{
         lat:'=',
         long:'=',
-        zoom:'='
+        zoom:'=',
+        title:'=',
+        description:'='
       },
       template: require('./template'),
       replace: true,
